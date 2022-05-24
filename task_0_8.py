@@ -1,5 +1,3 @@
-import math
-import sys
 def convert_to_time(number):
     one_hour = "hour"
     two_or_more_hours = "hours"
@@ -8,13 +6,13 @@ def convert_to_time(number):
     output = ""
 
     if number < 0:
-        sys.exit("Invalid Input")
+        return "Invalid Input"
 
     if number % 60 != 0:
-        hours = math.floor(number/60)
+        hours = int(number/60)
         minutes = number % 60
     else:
-        hours = math.floor(number/60)
+        hours = int(number/60)
         minutes = 0
 
     if hours == 0 or hours > 1:
