@@ -8,5 +8,5 @@ def vowels_in_string(str):
             if i == j:
                 output += f'{i}, '
 
-    return output[:-2]
+    print(output[:-2])
 
