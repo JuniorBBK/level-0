@@ -4,7 +4,7 @@ def common_letters(str1, str2):
     output = "Common letters: "
 
     for i in set(str1):
-        for j in str2:
+        for j in set(str2):
             if i == j:
                 output += f'{i}, '
 
