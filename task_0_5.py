@@ -1,9 +1,7 @@
-def area_of_triangle(int1, int2, int3):
+def area_of_triangle(side1, side2, side3):
 
-    semiperimeter = 1/2 * (int1 + int2 + int3)
+    semiperimeter = 1/2 * (side1 + side2 + side3)
 
-    output = (semiperimeter * (semiperimeter-int1) * (semiperimeter-int2) * (semiperimeter-int3)) ** 0.5
+    area = (semiperimeter * (semiperimeter-side1) * (semiperimeter-side2) * (semiperimeter-side3)) ** 0.5
 
-    return output
-
-
+    return area
