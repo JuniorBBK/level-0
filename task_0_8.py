@@ -8,13 +8,9 @@ def convert_to_time(number):
     if number < 0:
         return "Invalid Input"
 
-    if number % 60 != 0:
-        hours = int(number/60)
-        minutes = number % 60
-    else:
-        hours = int(number/60)
-        minutes = 0
-
+    hours = int(number/60)
+    minutes = number % 60
+    
     if hours == 0 or hours > 1:
         if minutes == 0 or minutes > 1:
             output += f'{hours} {two_or_more_hours}, {minutes} {two_or_more_minutes}'
@@ -27,4 +23,4 @@ def convert_to_time(number):
             output += f'{hours} {one_hour}, {minutes} {one_minute}'
 
     return output
-        
+
